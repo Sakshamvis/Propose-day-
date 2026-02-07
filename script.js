@@ -16,7 +16,7 @@ const startScreen = document.getElementById('start-screen');
 const proposalScreen = document.getElementById('proposal-screen');
 const celebrationScreen = document.getElementById('celebration-screen');
 const startBtn = document.getElementById('start-btn');
-const yesBtn = document.getElementById('click', () => {if (navigator.vibrate) navigator.vibrate([200,100,200]);
+const yesBtn = document.getElementById('yes-btn');
 const noBtn = document.getElementById('no-btn');
 const message = `
 Shreya, I choose u in every universe ❤️♾️
@@ -378,6 +378,7 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
 
 
