@@ -26,10 +26,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    font-family: var(--font-body);
-    background: var(--bg-gradient);
-    user-select: none; /* Prevent selection during game */
+    overflow-x: hidden;
+    overflow-y: auto;   /* allow vertical scroll */
 }
 
 #game-container {
@@ -209,6 +207,7 @@ p {
     white-space: pre-line;
     text-align: left;
 }
+
 
 
 
