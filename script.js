@@ -42,7 +42,8 @@ will u be mine, today, tomorrow, and every lifetime after? 💍✨
 
 cross my heart, it’s always u ❤️
 `;
-const photos = ["photo1.jpg","photo2.jpg","photo3.jpg"];
+const photos = ["photo1.jpeg","photo2.jpeg","photo3.jpeg"];
+
 let idx = 0;
 
 function startSlideshow() {
@@ -378,6 +379,7 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
 
 
