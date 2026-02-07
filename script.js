@@ -227,6 +227,19 @@ function triggerProposal() {
 }
 
 function startGame() {
+    const music = document.getElementById('bg-music');
+
+    music.volume = 0; // start silent
+    music.play();
+
+    // smooth fade-in (romantic effect)
+    let v = 0;
+    const fade = setInterval(() => {
+        v += 0.02;
+        music.volume = v;
+        if (v >= 0.5) clearInterval(fade);
+    }, 120);
+
     resize();
     player = new Player();
     hearts = [];
@@ -271,3 +284,4 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
