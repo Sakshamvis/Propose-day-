@@ -321,12 +321,23 @@ function startGame() {
 startBtn.addEventListener('click', startGame);
 
 yesBtn.addEventListener('click', () => {
+
     proposalScreen.classList.remove('active');
     proposalScreen.classList.add('hidden');
+
     celebrationScreen.classList.remove('hidden');
     celebrationScreen.classList.add('active');
-    triggerConfetti(); // Optional: Implement confetti
+
+    triggerConfetti();
+    startSlideshow();
+
+    const typed = document.getElementById("typed-text");
+    typed.innerHTML = "";
+    typeWriter(message, typed);
+
+    if (navigator.vibrate) navigator.vibrate([200,100,200]);
 });
+
 
 // "No" button runs away
 noBtn.addEventListener('mouseover', moveNoButton);
@@ -367,6 +378,7 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
 
 
