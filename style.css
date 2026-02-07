@@ -13,7 +13,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.letter-box {
+    background: white;
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    white-space: pre-line;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -189,4 +198,5 @@ p {
         opacity: 0;
     }
 }
+
 
