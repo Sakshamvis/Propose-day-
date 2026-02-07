@@ -42,6 +42,18 @@ will u be mine, today, tomorrow, and every lifetime after? 💍✨
 
 cross my heart, it’s always u ❤️
 `;
+const photos = ["photo1.jpg","photo2.jpg","photo3.jpg"];
+let idx = 0;
+
+function startSlideshow() {
+    const img = document.getElementById("slide-img");
+    img.src = photos[0];
+
+    setInterval(() => {
+        idx = (idx + 1) % photos.length;
+        img.src = photos[idx];
+    }, 2500);
+}
 
 // Resize Handling
 function typeWriter(text, el, speed = 30) {
@@ -355,6 +367,7 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
 
 
