@@ -84,14 +84,15 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     min-height: 100vh;
 
-    display: flex;
+    display: flex;              /* enable centering */
     flex-direction: column;
 
-    justify-content: center;  /* vertical center */
-    align-items: center;      /* horizontal center */
+    justify-content: center;    /* vertical center */
+    align-items: center;        /* horizontal center */
 
     text-align: center;
 }
@@ -131,9 +132,7 @@ p {
     padding: 18px 45px;
     font-size: 1.2rem;
     border-radius: 50px;
-    flex:0 0 auto;
-    width: auto;      /* important */
-    height: auto;     /* important */
+    flex: 0 0 auto;
 }
 
 
@@ -210,6 +209,7 @@ p {
     white-space: pre-line;
     text-align: left;
 }
+
 
 
 
