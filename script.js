@@ -159,6 +159,20 @@ function spawnHeart() {
         hearts.push(new Heart());
     }
 }
+function spawnFloatingHeart() {
+    const h = document.createElement("div");
+    h.className = "floating-heart";
+    h.innerText = "❤️";
+
+    h.style.left = Math.random() * 100 + "vw";
+    h.style.animationDuration = (6 + Math.random() * 5) + "s";
+
+    document.body.appendChild(h);
+
+    setTimeout(() => h.remove(), 10000);
+}
+
+setInterval(spawnFloatingHeart, 400);
 
 function updateGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
@@ -284,4 +298,5 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
