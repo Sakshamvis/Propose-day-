@@ -18,6 +18,30 @@ const celebrationScreen = document.getElementById('celebration-screen');
 const startBtn = document.getElementById('start-btn');
 const yesBtn = document.getElementById('click', () => {if (navigator.vibrate) navigator.vibrate([200,100,200]);
 const noBtn = document.getElementById('no-btn');
+const message = `
+Shreya, I choose u in every universe ❤️♾️
+
+Ik I sometimes irritate u a lot, bt I really can’t help it yrr 😭
+I try to act nonchalant, bt nhi hota tere samne.
+Gnmsti mai kabhi kabhi kuch bhi nikal jata hai mere muh se and later I regret it like an idiot 🤦🏻‍♂️
+
+Also let’s forget about the past and start a new journey from point zero. Fresh start. Just u n me ✨🤍
+
+Ik u never expect anything from me, unlike dumb me who expects the whole world from u 🥺
+
+Whenever I’m on vc with u, my brain literally stops working… I just freeze 😭
+
+People say love is just a game… and u can’t win it 🎮
+Bt if there’s even one way, I’ll find it someday ❤️
+And then this fool will rush in, put ur head on my shoulder, whisper in ur ear…
+baby… tell me u love me too 🫶🏻
+
+I’ll never ever give up on u. Ever. 🤞❤️
+
+will u be mine, today, tomorrow, and every lifetime after? 💍✨
+
+cross my heart, it’s always u ❤️
+`;
 
 // Resize Handling
 function resize() {
@@ -317,6 +341,7 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
 
 
