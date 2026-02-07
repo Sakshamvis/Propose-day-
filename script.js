@@ -16,7 +16,7 @@ const startScreen = document.getElementById('start-screen');
 const proposalScreen = document.getElementById('proposal-screen');
 const celebrationScreen = document.getElementById('celebration-screen');
 const startBtn = document.getElementById('start-btn');
-const yesBtn = document.getElementById('yes-btn');
+const yesBtn = document.getElementById('click', () => {if (navigator.vibrate) navigator.vibrate([200,100,200]);
 const noBtn = document.getElementById('no-btn');
 
 // Resize Handling
@@ -291,12 +291,32 @@ function moveNoButton() {
 }
 
 function triggerConfetti() {
-    // Simple confetti effect using particles or similar
-    // We can just reuse the heat/particle engine or add a simple CSS class to body
-    // For now, let's just let it be.
+    for (let i = 0; i < 120; i++) {
+        const c = document.createElement("div");
+
+        c.style.position = "fixed";
+        c.style.left = Math.random() * 100 + "vw";
+        c.style.top = "-10px";
+        c.style.width = "8px";
+        c.style.height = "8px";
+        c.style.background = `hsl(${Math.random()*360},100%,60%)`;
+        c.style.pointerEvents = "none";
+        c.style.transition = "transform 2s linear, opacity 2s";
+
+        document.body.appendChild(c);
+
+        setTimeout(() => {
+            c.style.transform = "translateY(100vh) rotate(720deg)";
+            c.style.opacity = 0;
+        }, 10);
+
+        setTimeout(() => c.remove(), 2000);
+    }
 }
+
 
 // Initialize
 resize();
+
 
 
