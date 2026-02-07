@@ -31,10 +31,10 @@ Ik u never expect anything from me, unlike dumb me who expects the whole world f
 
 Whenever I’m on vc with u, my brain literally stops working… I just freeze 😭
 
-People say love is just a game… and u can’t win it 🎮
+People say love is just a game… and u can’t win it 
 Bt if there’s even one way, I’ll find it someday ❤️
 And then this fool will rush in, put ur head on my shoulder, whisper in ur ear…
-baby… tell me u love me too 🫶🏻
+baby… tell me u love me too 🫶🏻🙂‍↕️🙂‍↕️💝
 
 I’ll never ever give up on u. Ever. 🤞❤️
 
@@ -378,6 +378,7 @@ function triggerConfetti() {
 
 // Initialize
 resize();
+
 
 
 
