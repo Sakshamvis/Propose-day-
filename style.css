@@ -81,11 +81,8 @@ canvas {
 
 /* Screens */
 .screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;   /* allow content to grow */
+    text-align: center;
+    padding-top: 120px;
 }
 
 .screen.hidden {
@@ -97,7 +94,7 @@ canvas {
 .screen.active {
     opacity: 1;
     pointer-events: auto;
-    display: flex;
+    display: block;
 }
 
 h1 {
@@ -199,6 +196,7 @@ p {
     white-space: pre-line;
     text-align: left;
 }
+
 
 
 
