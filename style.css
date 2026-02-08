@@ -210,6 +210,13 @@ p {
     text-align: left;
 }
 
+#slide-img {
+  padding: 10px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
 
 
 
